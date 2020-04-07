@@ -1,1 +1,1 @@
-<?= echo 'test php version'.PHP_VERSION; ?>
+<?= 'test php version'.PHP_VERSION; ?>
