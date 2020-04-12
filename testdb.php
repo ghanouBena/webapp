@@ -1,10 +1,10 @@
 <?php
 
-$dbhost = getenv("MYSQL_SERVICE_HOST");
-$dbport = getenv("MYSQL_SERVICE_PORT");
-$dbuser = getenv("MYSQL_USER");
-$dbpwd = getenv("MYSQL_PASSWORD");
-$dbname = getenv("MYSQL_DATABASE");
+$dbhost = getenv("OPENSHIFT_MYSQL_DB_HOST");
+$dbport = getenv("OPENSHIFT_MYSQL_DB_PORT");
+$dbuser = getenv("OPENSHIFT_MYSQL_DB_USER");
+$dbpwd = getenv("OPENSHIFT_MYSQL_DB_PASSWORD");
+$dbname = getenv("OPENSHIFT_GEAR_NAME");
 
 $con = mysqli_connect($dbhost.':'.$dbport,$dbuser,$dbpwd,$dbname);
 if(!$con){
